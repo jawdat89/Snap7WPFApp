@@ -1,0 +1,22 @@
+﻿<Window x:Class="Snap7App.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Snap7App"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Menu>
+            <MenuItem Header="Connection">
+                <MenuItem x:Name="cmdMenuConnect" Header="Connect" Click="ConnectPLC"/>
+                <MenuItem x:Name="cmdMenuDisconnect" Header="Disconnect" Click="DisconnectPLC" IsEnabled="False"/>
+            </MenuItem>
+        </Menu>
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Button x:Name="ConnectButton" Content="Connect" Width="100" Margin="5" Click="ConnectPLC"/>
+            <Button x:Name="DisconnectButton" Content="Disconnect" Width="100" Margin="5" Click="DisconnectPLC" IsEnabled="False"/>
+            <TextBlock x:Name="ConnectionStatus" Text="Disconnected" Foreground="Red" Margin="5" FontSize="16"/>
+        </StackPanel>
+    </Grid>
+</Window>
