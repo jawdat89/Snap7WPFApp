@@ -1,6 +1,6 @@
 # Snap7WPFApp
 
-Snap7App is a WPF application developed using the .NET Framework. It provides a user interface for connecting to a Siemens PLC using the Sharp7 library. The application includes functionality for bit manipulation and managing PLC connections.
+Snap7App is a WPF application developed using the .NET Core. It provides a user interface for connecting to a Siemens PLC using the Sharp7 library. The application includes functionality for bit manipulation and managing PLC connections.
 
 ## Features
 
